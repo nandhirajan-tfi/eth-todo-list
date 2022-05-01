@@ -10,7 +10,15 @@
     - Blockchain is nothing but the database.
 - Deploye the smart contract -> sudo truffle deploy.
     - It will bring down the ETH on Ganache. Means deployment SC to the Blockchain costs some ETH, need some gas.
-    
+- Open console - truffle console
+
+```
+todoList = await TodoList.deployed()
+todoList.address
+todoList.taskCount()
+taskCount = await todoList.taskCount()
+taskCount.toNumber()
+```
 
 
 
